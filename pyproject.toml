@@ -1,6 +1,9 @@
+[project]
+name = "snakemake_pixi"
+version = "0.1.0"
 
 [tool.pixi.project]
-name = "snakemake-pixi"
+name = "snakemake_pixi"
 channels = ["conda-forge", "bioconda"]
 platforms = ["linux-64", "osx-arm64", "osx-64"]
 
@@ -16,6 +19,7 @@ rulegraph = "snakemake -F --rulegraph | dot -Tsvg > resources/rulegraph.svg"
 filegraph = "snakemake -F --filegraph | dot -Tsvg > resources/filegraph.svg"
 graphs = { depends_on = ["dag", "rulegraph", "filegraph"] }
 fmt = "snakefmt ."
+
 
 [tool.snakefmt]
 line_length = 90

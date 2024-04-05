@@ -4,7 +4,6 @@ rule all:
     shell:
         "cat {input}"
 
-
 rule makesummary:
     output:
         "results/summary.txt",
