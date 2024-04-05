@@ -23,6 +23,27 @@ This makes sure that the lock is synchronized and version controlled.
 
 ## Usage
 
+To add packages to the `default` environment:
+
+```bash
+pixi add pandas
+```
+
+### To run a command in the environment
+
+```bash
+pixi run snakemake --dryrun
+```
+
+### Enter into the environment
+
+```bash
+pixi shell
+
+# Exit the environment using "exit"
+```
+
+### Pixi Tasks
 Pixi also allows defining tasks for common tasks. This is done in the [pyproject.toml](pyproject.toml) file.
 
 ```toml
@@ -46,14 +67,14 @@ graphs = { depends_on = ["dag", "rulegraph", "filegraph"] }
 Running `pixi run graphs` will create the three graphs and save them in the resources folder.
 This way, they are automatically updated below in this README. 
 
-### DAG 
+#### DAG 
 
 ![DAG](resources/dag.svg)
 
-### Rulegraph
+#### Rulegraph
 
 ![Rulegraph](resources/rulegraph.svg)
 
-### Filegraph
+#### Filegraph
 
 ![Filegraph](resources/filegraph.svg)

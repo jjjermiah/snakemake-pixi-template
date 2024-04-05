@@ -17,7 +17,6 @@ filegraph = "snakemake -F --filegraph | dot -Tsvg > resources/filegraph.svg"
 graphs = { depends_on = ["dag", "rulegraph", "filegraph"] }
 fmt = "snakefmt ."
 
-
 [tool.snakefmt]
 line_length = 90
 include = '\.smk$|^Snakefile|\.py$'
