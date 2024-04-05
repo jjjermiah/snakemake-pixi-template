@@ -168,3 +168,4 @@ results/
 */.DS_Store
 */.ipynb_checkpoints
 */.vscode/
+.panoptes.db

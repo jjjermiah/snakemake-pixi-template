@@ -1,27 +1,40 @@
 [project]
 name = "snakemake_pixi"
 version = "0.1.0"
+dependencies = [
+    "panoptes-ui"
+]
+
 
 [tool.pixi.project]
 name = "snakemake_pixi"
 channels = ["conda-forge", "bioconda"]
 platforms = ["linux-64", "osx-arm64", "osx-64"]
 
+[tool.pixi.system-requirements]
+linux = "5.4.203"
+
 [tool.pixi.dependencies]
-snakemake = "==7.32.4"
+snakemake = "==7.31"
 snakefmt = ">=0.10.0,<0.11"
+waitress = ">=3.0.0,<3.1"
 
 [tool.pixi.tasks]
 dryrun = "snakemake --dry-run"
 snake = "snakemake --cores 1"
+
+fmt = "snakefmt ."
+
 dag = "snakemake -F --dag | dot -Tsvg > resources/dag.svg"
 rulegraph = "snakemake -F --rulegraph | dot -Tsvg > resources/rulegraph.svg"
 filegraph = "snakemake -F --filegraph | dot -Tsvg > resources/filegraph.svg"
 graphs = { depends_on = ["dag", "rulegraph", "filegraph"] }
-fmt = "snakefmt ."
 
+panoptes = "panoptes --port 1234"
+snake-wms = "snakemake --snakefile Snakefile -c1 --wms-monitor http://127.0.0.1:1234"
 
 [tool.snakefmt]
 line_length = 90
 include = '\.smk$|^Snakefile|\.py$'
+
 
