@@ -1,0 +1,85 @@
+{"level": "info", "msg": "Assuming unrestricted shared filesystem usage.", "indent": false, "timestamp": 1712425445.1042938}
+{"level": "info", "msg": "Building DAG of jobs...", "indent": false, "timestamp": 1712425445.108038}
+{"level": "info", "msg": "Building DAG of jobs...", "indent": false, "timestamp": 1712425445.108038}
+{"level": "dag_debug", "status": "candidate", "job": "all", "timestamp": 1712425445.1084101}
+{"level": "dag_debug", "status": "candidate", "job": "all", "timestamp": 1712425445.1084101}
+{"level": "dag_debug", "status": "candidate", "job": "makesummary", "timestamp": 1712425445.108881}
+{"level": "dag_debug", "status": "candidate", "job": "makesummary", "timestamp": 1712425445.108881}
+{"level": "dag_debug", "status": "selected", "job": "makesummary", "timestamp": 1712425445.1089559}
+{"level": "dag_debug", "status": "selected", "job": "makesummary", "timestamp": 1712425445.1089559}
+{"level": "dag_debug", "status": "selected", "job": "all", "timestamp": 1712425445.109018}
+{"level": "dag_debug", "status": "selected", "job": "all", "timestamp": 1712425445.109018}
+{"level": "debug", "msg": "shared_storage_local_copies: True", "timestamp": 1712425445.111521}
+{"level": "debug", "msg": "shared_storage_local_copies: True", "timestamp": 1712425445.111521}
+{"level": "debug", "msg": "remote_exec: False", "timestamp": 1712425445.111594}
+{"level": "debug", "msg": "remote_exec: False", "timestamp": 1712425445.111594}
+{"level": "info", "msg": "Using shell: /bin/bash", "indent": false, "timestamp": 1712425445.111843}
+{"level": "info", "msg": "Using shell: /bin/bash", "indent": false, "timestamp": 1712425445.111843}
+{"level": "resources_info", "msg": "Provided cores: 1 (use --cores to define parallelism)", "timestamp": 1712425445.1119459}
+{"level": "resources_info", "msg": "Provided cores: 1 (use --cores to define parallelism)", "timestamp": 1712425445.1119459}
+{"level": "resources_info", "msg": "Rules claiming more threads will be scaled down.", "timestamp": 1712425445.112031}
+{"level": "resources_info", "msg": "Rules claiming more threads will be scaled down.", "timestamp": 1712425445.112031}
+{"level": "run_info", "msg": "Job stats:\njob            count\n-----------  -------\nall                1\nmakesummary        1\ntotal              2\n", "timestamp": 1712425445.115787}
+{"level": "run_info", "msg": "Job stats:\njob            count\n-----------  -------\nall                1\nmakesummary        1\ntotal              2\n", "timestamp": 1712425445.115787}
+{"level": "debug", "msg": "Resources before job selection: {'_cores': 1, '_nodes': 9223372036854775807}", "timestamp": 1712425445.11612}
+{"level": "debug", "msg": "Resources before job selection: {'_cores': 1, '_nodes': 9223372036854775807}", "timestamp": 1712425445.11612}
+{"level": "debug", "msg": "Ready jobs (1)", "timestamp": 1712425445.1161878}
+{"level": "debug", "msg": "Ready jobs (1)", "timestamp": 1712425445.1161878}
+{"level": "info", "msg": "Select jobs to execute...", "indent": false, "timestamp": 1712425445.116244}
+{"level": "info", "msg": "Select jobs to execute...", "indent": false, "timestamp": 1712425445.116244}
+{"level": "debug", "msg": "Using greedy selector because only single job has to be scheduled.", "timestamp": 1712425445.1646569}
+{"level": "debug", "msg": "Using greedy selector because only single job has to be scheduled.", "timestamp": 1712425445.1646569}
+{"level": "debug", "msg": "Selected jobs (1)", "timestamp": 1712425445.165184}
+{"level": "debug", "msg": "Selected jobs (1)", "timestamp": 1712425445.165184}
+{"level": "debug", "msg": "Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775806}", "timestamp": 1712425445.16527}
+{"level": "debug", "msg": "Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775806}", "timestamp": 1712425445.16527}
+{"level": "info", "msg": "Execute 1 jobs...", "indent": false, "timestamp": 1712425445.165343}
+{"level": "info", "msg": "Execute 1 jobs...", "indent": false, "timestamp": 1712425445.165343}
+{"jobid": 1, "msg": null, "name": "makesummary", "local": true, "input": [], "output": ["results/summary.txt"], "log": [], "benchmark": null, "wildcards": {}, "reason": "Forced execution", "resources": [1, 1, "/var/folders/8t/rwh6rzg93jxfqkb63gt2n4940000gn/T"], "priority": 0, "threads": 1, "indent": false, "is_checkpoint": false, "printshellcmd": true, "is_handover": false, "level": "job_info", "timestamp": 1712425445.165496}
+{"jobid": 1, "msg": null, "name": "makesummary", "local": true, "input": [], "output": ["results/summary.txt"], "log": [], "benchmark": null, "wildcards": {}, "reason": "Forced execution", "resources": [1, 1, "/var/folders/8t/rwh6rzg93jxfqkb63gt2n4940000gn/T"], "priority": 0, "threads": 1, "indent": false, "is_checkpoint": false, "printshellcmd": true, "is_handover": false, "level": "job_info", "timestamp": 1712425445.165496}
+{"level": "shellcmd", "msg": "sleep 10; echo 'This is a summary' > results/summary.txt", "indent": false, "timestamp": 1712425445.165807}
+{"level": "shellcmd", "msg": "sleep 10; echo 'This is a summary' > results/summary.txt", "indent": false, "timestamp": 1712425445.165807}
+{"level": "debug", "msg": "Completion of job ['makesummary'] reported to scheduler.", "timestamp": 1712425455.180539}
+{"level": "debug", "msg": "Completion of job ['makesummary'] reported to scheduler.", "timestamp": 1712425455.180539}
+{"level": "debug", "msg": "jobs registered as running before removal {makesummary}", "timestamp": 1712425455.186322}
+{"level": "debug", "msg": "jobs registered as running before removal {makesummary}", "timestamp": 1712425455.186322}
+{"jobid": 1, "level": "job_finished", "timestamp": 1712425455.1865861}
+{"jobid": 1, "level": "job_finished", "timestamp": 1712425455.1865861}
+{"level": "progress", "done": 1, "total": 2, "timestamp": 1712425455.186996}
+{"level": "progress", "done": 1, "total": 2, "timestamp": 1712425455.186996}
+{"level": "debug", "msg": "Resources before job selection: {'_cores': 1, '_nodes': 9223372036854775807}", "timestamp": 1712425455.187464}
+{"level": "debug", "msg": "Resources before job selection: {'_cores': 1, '_nodes': 9223372036854775807}", "timestamp": 1712425455.187464}
+{"level": "debug", "msg": "Ready jobs (1)", "timestamp": 1712425455.187634}
+{"level": "debug", "msg": "Ready jobs (1)", "timestamp": 1712425455.187634}
+{"level": "info", "msg": "Select jobs to execute...", "indent": false, "timestamp": 1712425455.187728}
+{"level": "info", "msg": "Select jobs to execute...", "indent": false, "timestamp": 1712425455.187728}
+{"level": "debug", "msg": "Using greedy selector because only single job has to be scheduled.", "timestamp": 1712425455.1879392}
+{"level": "debug", "msg": "Using greedy selector because only single job has to be scheduled.", "timestamp": 1712425455.1879392}
+{"level": "debug", "msg": "Selected jobs (1)", "timestamp": 1712425455.1886709}
+{"level": "debug", "msg": "Selected jobs (1)", "timestamp": 1712425455.1886709}
+{"level": "debug", "msg": "Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775806}", "timestamp": 1712425455.188766}
+{"level": "debug", "msg": "Resources after job selection: {'_cores': 0, '_nodes': 9223372036854775806}", "timestamp": 1712425455.188766}
+{"level": "info", "msg": "Execute 1 jobs...", "indent": false, "timestamp": 1712425455.188853}
+{"level": "info", "msg": "Execute 1 jobs...", "indent": false, "timestamp": 1712425455.188853}
+{"jobid": 0, "msg": null, "name": "all", "local": true, "input": ["results/summary.txt"], "output": [], "log": [], "benchmark": null, "wildcards": {}, "reason": "Forced execution", "resources": [1, 1, "/var/folders/8t/rwh6rzg93jxfqkb63gt2n4940000gn/T"], "priority": 0, "threads": 1, "indent": false, "is_checkpoint": false, "printshellcmd": true, "is_handover": false, "level": "job_info", "timestamp": 1712425455.1890738}
+{"jobid": 0, "msg": null, "name": "all", "local": true, "input": ["results/summary.txt"], "output": [], "log": [], "benchmark": null, "wildcards": {}, "reason": "Forced execution", "resources": [1, 1, "/var/folders/8t/rwh6rzg93jxfqkb63gt2n4940000gn/T"], "priority": 0, "threads": 1, "indent": false, "is_checkpoint": false, "printshellcmd": true, "is_handover": false, "level": "job_info", "timestamp": 1712425455.1890738}
+{"level": "shellcmd", "msg": "cat results/summary.txt", "indent": false, "timestamp": 1712425455.189755}
+{"level": "shellcmd", "msg": "cat results/summary.txt", "indent": false, "timestamp": 1712425455.189755}
+{"level": "debug", "msg": "Completion of job ['all'] reported to scheduler.", "timestamp": 1712425455.196259}
+{"level": "debug", "msg": "Completion of job ['all'] reported to scheduler.", "timestamp": 1712425455.196259}
+{"level": "debug", "msg": "jobs registered as running before removal {all}", "timestamp": 1712425455.197261}
+{"level": "debug", "msg": "jobs registered as running before removal {all}", "timestamp": 1712425455.197261}
+{"jobid": 0, "level": "job_finished", "timestamp": 1712425455.1973708}
+{"jobid": 0, "level": "job_finished", "timestamp": 1712425455.1973708}
+{"level": "progress", "done": 2, "total": 2, "timestamp": 1712425455.197762}
+{"level": "progress", "done": 2, "total": 2, "timestamp": 1712425455.197762}
+{"level": "info", "msg": "Complete log: .snakemake/log/2024-04-06T134405.104598.snakemake.log", "indent": false, "timestamp": 1712425455.1987}
+{"level": "info", "msg": "Complete log: .snakemake/log/2024-04-06T134405.104598.snakemake.log", "indent": false, "timestamp": 1712425455.1987}
+{"level": "debug", "msg": "unlocking", "timestamp": 1712425455.198936}
+{"level": "debug", "msg": "unlocking", "timestamp": 1712425455.198936}
+{"level": "debug", "msg": "removing lock", "timestamp": 1712425455.199062}
+{"level": "debug", "msg": "removing lock", "timestamp": 1712425455.199062}
+{"level": "debug", "msg": "removing lock", "timestamp": 1712425455.199303}
+{"level": "debug", "msg": "removing lock", "timestamp": 1712425455.199303}
+{"level": "debug", "msg": "removed all locks", "timestamp": 1712425455.199498}
+{"level": "debug", "msg": "removed all locks", "timestamp": 1712425455.199498}
